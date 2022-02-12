@@ -1,5 +1,5 @@
-import React from 'react';
-import '../pages/MedicalStore/Store.css';
+import React from "react";
+import "../pages/MedicalStore/Store.css";
 export default function Product(props) {
   const { product, onAdd } = props;
   return (

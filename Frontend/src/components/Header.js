@@ -1,57 +1,56 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Link as Scroll } from 'react-scroll';
+import React, { useEffect, useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { AppBar, IconButton, Toolbar, Collapse } from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as Scroll } from "react-scroll";
 // import Button from '@material-ui/core/Button'
 // import styles from "./Header.module.css";
 // import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    fontFamily: 'Nunito',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    fontFamily: "Nunito",
   },
   appbar: {
-    background: 'none',
+    background: "none",
   },
   appbarWrapper: {
-    width: '80%',
-    margin: '0 auto',
+    width: "80%",
+    margin: "0 auto",
   },
   appbarTitle: {
-    flexGrow: '1',
+    flexGrow: "1",
   },
   icon: {
-    color: '#fff',
-    fontSize: '2rem',
+    color: "#fff",
+    fontSize: "2rem",
   },
   colorText: {
-    color: '#5AFF3D',
+    color: "#5AFF3D",
   },
   container: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   title: {
-    color: '#fff',
-    fontSize: '4.5rem',
+    color: "#fff",
+    fontSize: "4.5rem",
   },
   goDown: {
-    color: '#5AFF3D',
-    fontSize: '4rem',
+    color: "#5AFF3D",
+    fontSize: "4rem",
   },
 }));
-export default function Header({isAuthenticated}) {
+export default function Header() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
     setChecked(true);
   }, []);
 
-  
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
@@ -62,7 +61,6 @@ export default function Header({isAuthenticated}) {
           {/* <IconButton>
             <SortIcon className={classes.icon} />
           </IconButton> */}
-        
         </Toolbar>
         {/* <Button>Login</Button> */}
       </AppBar>

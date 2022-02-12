@@ -1,6 +1,6 @@
-import React from 'react';
-import Product from './Product';
-import '../pages/MedicalStore/Store.css';
+import React from "react";
+import Product from "./Product";
+import "../pages/MedicalStore/Store.css";
 export default function Main(props) {
   const { products, onAdd } = props;
   return (
