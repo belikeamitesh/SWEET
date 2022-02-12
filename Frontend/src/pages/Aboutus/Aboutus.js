@@ -3,7 +3,7 @@ import styles from "./Aboutus.module.css";
 
 function Aboutus() {
   return (
-    <div className={styles.header}>Aboutus</div>
+    <div className={styles.header}>About Us</div>
   )
 }
 

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Handmade';
+    src: url("../../../assets/handmade_220/Handmade.otf") format("otf");
+  }
+.header{
+    width: 100vw;
+    height: 5vh;
+    background-color: aqua;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Taken from google API's location*/
+/* Set the size of the div element that contains the map */
+#mapContainer {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 400px;
+    /* The width is the width of the web page */
+  }
