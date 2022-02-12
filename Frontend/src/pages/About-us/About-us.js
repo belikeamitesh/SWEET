@@ -18,10 +18,16 @@ import { IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const cards = [
-  { index: 1, name: "Anthony", text: "Hey this is me.", image: "https://source.unsplash.com/random", linkedin: "https://www.linkedin.com/in/anthony-depachtere/"},
-  { index: 2, name: "Amitesh", text: "Hey this is not me lol.", image: "https://source.unsplash.com/random", linkedin: "https://www.google.com"},
-  { index: 3, name: "Artour", text: "Hey this is not me lol.", image: "https://source.unsplash.com/random", linkedin: "https://www.google.com"},
-  { index: 4, name: "Majid", text: "Hey this is not me lol.", image: "https://source.unsplash.com/random", linkedin: "https://www.google.com"},
+    {
+        index: 1,
+        name: 'Anthony',
+        text: 'Hey this is me.',
+        image: 'https://source.unsplash.com/random',
+        linkedin: 'https://www.linkedin.com/in/anthony-depachtere/',
+    },
+    { index: 2, name: 'Amitesh', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
+    { index: 3, name: 'Artour', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
+    { index: 4, name: 'Majid', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
 ];
 
 const theme = createTheme();
@@ -33,7 +39,7 @@ export default function AbboutUs() {
             <AppBar position="relative">
                 <Toolbar>
                     <IconButton component={Link} to="/">
-                    <HomeIcon />
+                        <HomeIcon />
                     </IconButton>
                     <Typography variant="h6" color="inherit" noWrap>
                         About us
@@ -54,8 +60,8 @@ export default function AbboutUs() {
                             Who are we?
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                            Three motivated student in computer engineering from Canada and India, united by the desire of discovering new technologies.
-                            One of our hobbys is also to try to change the wolrd around us.
+                            Three motivated student in computer engineering from Canada and India, united by the desire of discovering new
+                            technologies. One of our hobbys is also to try to change the wolrd around us.
                         </Typography>
                     </Container>
                 </Box>
@@ -71,11 +77,7 @@ export default function AbboutUs() {
                                         flexDirection: 'column',
                                     }}
                                 >
-                                    <CardMedia
-                                        component="img"
-                                        image="https://source.unsplash.com/random"
-                                        alt="random"
-                                    />
+                                    <CardMedia component="img" image="https://source.unsplash.com/random" alt="random" />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             {card.name}
@@ -83,7 +85,9 @@ export default function AbboutUs() {
                                         <Typography>{card.text}</Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small" href={card.linkedin} target="_blank">LinkedIn</Button>
+                                        <Button size="small" href={card.linkedin} target="_blank">
+                                            LinkedIn
+                                        </Button>
                                         <Button size="small">Second link</Button>
                                     </CardActions>
                                 </Card>
