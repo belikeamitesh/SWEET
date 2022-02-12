@@ -1,5 +1,1 @@
-# SEWW
-
-## Start the project
-- `npm i`
-- `npm start`
+# Quick-Chat-App
