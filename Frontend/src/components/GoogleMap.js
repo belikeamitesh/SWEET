@@ -56,16 +56,70 @@ export class MapContainer extends Component {
       .catch(error => console.error('Error', error));
   };
 
-  Style={
-    height:'50%',
-    width:'50%'
+  // centered
+  StyleMap={
+    height:'80%',
+    width:'70%',
+    left: '15%',
+    top: '2%'
   };
+
+  InputStyle={
+    width:'50%',
+    'margin-left': '25%',
+    'margin-top' : '2%'
+  }
+
+  Centered={
+    'margin-left': '25%'
+  }
 
   render() {
     return (
       <div id="GoogleMap">
-
-        <Map style={this.Style} google={this.props.google}
+        {/* autocomplete */}
+        <PlacesAutocomplete
+          value={this.state.address}
+          onChange={this.handleChange}
+          onSelect={this.handleSelect}
+        >
+          {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+            <div>
+              <input
+                {...getInputProps({
+                  placeholder: 'Search Places ...',
+                  className: 'location-search-input',
+                })
+              }
+              style={this.InputStyle}
+              />
+              <div className="autocomplete-dropdown-container">
+                {loading && <div style={this.Centered}>Loading...</div>}
+                {suggestions.map(suggestion => {
+                  const className = suggestion.active
+                    ? 'suggestion-item--active'
+                    : 'suggestion-item';
+                  // inline style for demonstration purpose
+                  const style = suggestion.active
+                    ? { backgroundColor: '#fafafa', cursor: 'pointer' }
+                    : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                  return (
+                    <div
+                      {...getSuggestionItemProps(suggestion, {
+                        className,
+                        style,
+                      })}
+                    >
+                      <span>{suggestion.description}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </PlacesAutocomplete>
+        {/*The map*/}
+        <Map style={this.StyleMap} google={this.props.google}
             onClick={this.onMapClicked}
             initialCenter={{
               lat: this.state.mapCenter.lat,
@@ -93,45 +147,6 @@ export class MapContainer extends Component {
               </div>
           </InfoWindow>
         </Map>
-        {/* autocomplete */}
-        <PlacesAutocomplete
-          value={this.state.address}
-          onChange={this.handleChange}
-          onSelect={this.handleSelect}
-        >
-          {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-            <div>
-              <input
-                {...getInputProps({
-                  placeholder: 'Search Places ...',
-                  className: 'location-search-input',
-                })}
-              />
-              <div className="autocomplete-dropdown-container">
-                {loading && <div>Loading...</div>}
-                {suggestions.map(suggestion => {
-                  const className = suggestion.active
-                    ? 'suggestion-item--active'
-                    : 'suggestion-item';
-                  // inline style for demonstration purpose
-                  const style = suggestion.active
-                    ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                    : { backgroundColor: '#ffffff', cursor: 'pointer' };
-                  return (
-                    <div
-                      {...getSuggestionItemProps(suggestion, {
-                        className,
-                        style,
-                      })}
-                    >
-                      <span>{suggestion.description}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-        </PlacesAutocomplete>
       </div>
     )
   }

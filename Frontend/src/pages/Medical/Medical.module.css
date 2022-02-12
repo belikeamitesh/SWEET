@@ -12,9 +12,39 @@
 
 /* Taken from google API's location*/
 /* Set the size of the div element that contains the map */
-#mapContainer {
-    height: 400px;
+.container {
+    height: 100%;
     /* The height is 400 pixels */
-    width: 400px;
+    width: 100%;
     /* The width is the width of the web page */
+    overflow: hidden;
+  }
+
+  /*Taken from: https://www.w3schools.com/csS/tryit.asp?filename=trycss_buttons_animate2*/
+  .button{
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 5%;
+    text-align: center;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .button:hover {
+    opacity: 1
+  }
+
+  .flexContainer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-top: 10%;
   }
