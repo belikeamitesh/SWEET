@@ -27,6 +27,27 @@
     opacity: 1;
 }
 
+.button_send {
+    position: relative;
+    background-color: #4caf50;
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 20px;
+    margin: 5%;
+    text-align: center;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    width: 50%;
+}
+
+.button_send:hover {
+    opacity: 1;
+}
+
 .flexContainer {
     position: fixed;
     display: flex;
@@ -39,9 +60,9 @@
     background-color: #9ef7a1;
     position: absolute;
     display: inline;
-    left: 15%;
+    left: 20%;
     top: 10%;
-    width: 70%;
+    width: 60%;
     height: 85%;
     text-align: center;
 }

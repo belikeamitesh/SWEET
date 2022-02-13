@@ -35,7 +35,7 @@ function Social() {
             {showSMSInformation? <input type="tel" className={styles.inputPhone} placeholder='I.E: +15141234321' onChange={handlePhoneNumberChange}></input>: null}<br/>
             {showSMSInformation? <h2>Please write your message bellow:</h2>: null}<br/>
             {showSMSInformation? <textarea className={styles.inputText} placeholder='Your emergency message here' onChange={handleMessageChange}></textarea>: null}<br/>
-            {showSMSInformation? <button className={styles.button}  onClick={()=>sendMessage()}>Send Text Message</button>: null}
+            {showSMSInformation? <button className={styles.button_send}  onClick={()=>sendMessage()}>Send Text Message</button>: null}
         </div>: null}
         <div className={styles.flexContainer}>
             {!showSMSInformation? <button className={styles.button} onClick={()=>setVisibleSMSInformation(true)}>Send a Text Message</button>: null}
