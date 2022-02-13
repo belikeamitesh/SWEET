@@ -6,7 +6,7 @@ import GoogleMapPharmacies from '../../components/GoogleMapPharmacies';
 
 function Medical() {
     // taken from: https://www.youtube.com/watch?v=UGSN6o29fPo
-    const [showMedicalStores, setShowMedicalStores] = useState(true);
+    const [showMedicalStores, setShowMedicalStores] = useState(false);
     const [showHealthFacilities, setShowHealthFacilities] = useState(false);
     return (
         <div className={styles.container}>

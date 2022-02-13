@@ -9,8 +9,7 @@ const client = require('twilio')(Account.accountSid, Account.authToken, {
 });
 
 app.get("/", function(request,response){
-response.send(`<div>Message sent successfully!</div>`    
-)
+  response.send(true)
 })
 
 app.post("/sendSMS", (req, res) => {

@@ -34,3 +34,40 @@
     width: 15%;
     margin-top: 5%;
 }
+
+.SMSZone{
+    background-color: #9ef7a1;
+    position: absolute;
+    display: inline;
+    left: 15%;
+    top: 10%;
+    width: 70%;
+    height: 85%;
+    text-align: center;
+}
+
+.inputPhone{
+    text-align: center;
+    font-size: 20px;
+    border: 0%;
+}
+
+.inputText{
+    text-align: left;
+    font-size: 20px;
+    width: 50%;
+    height: 40%;
+    rows: 7;
+    border: 0%;
+    resize: none;
+}
+
+/* Taken from google API's location*/
+/* Set the size of the div element that contains the map */
+.container {
+    height: 100%;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    overflow: hidden;
+}
