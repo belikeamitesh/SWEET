@@ -1,4 +1,9 @@
 # SWEET, _Social and Emergency Woman Tech Website_
+## How to access our website
+Clone repo.
+
+Execute `npm start`
+
 ## Inspiration
 In todays world, there are lot of sites solving problems related to women in any aspect tackling different issues. But there is no specific site where women can easily find everything related to immediate usage either be it medical or safety or social needs.
 
