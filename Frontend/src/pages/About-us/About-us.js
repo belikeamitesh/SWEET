@@ -21,13 +21,13 @@ const cards = [
     {
         index: 1,
         name: 'Anthony',
-        text: 'Hey this is me.',
+        text: 'Hey, this is me.',
         image: 'https://source.unsplash.com/random',
         linkedin: 'https://www.linkedin.com/in/anthony-depachtere/',
     },
-    { index: 2, name: 'Amitesh', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
-    { index: 3, name: 'Artour', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
-    { index: 4, name: 'Majid', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
+    { index: 2, name: 'Amitesh', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
+    { index: 3, name: 'Artour', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
+    { index: 4, name: 'Majid', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
 ];
 
 const theme = createTheme();
