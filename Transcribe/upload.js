@@ -13,7 +13,7 @@ const data = {
 
 const params = {
   headers: {
-    "authorization": process.env.ASSEMBLYAI_API_KEY,
+    authorization: process.env.ASSEMBLYAI_API_KEY,
     "content-type": "application/json",
   },
   body: JSON.stringify(data),
