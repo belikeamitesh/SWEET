@@ -1,0 +1,33 @@
+<!-- For angular use, I am keeping just in case -->
+<html>
+    <head>
+        <title>Add Map</title>
+    </head>
+    <body>
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                const uluru = { lat: 45.5088, lng: -73.5616 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 6,
+                    center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                });
+            }
+        </script>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL2_MdRg6rQyrcBpXVWhzN_g10Qb-AEXQ&callback=initMap&libraries=&v=weekly"
+            async
+        ></script>
+    </body>
+</html>
