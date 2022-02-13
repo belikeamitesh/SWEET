@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // class inspired by: https://www.npmjs.com/package/google-maps-react
 // great tutorial: https://www.youtube.com/watch?v=h_d4HNwEleo
 import React, { Component } from 'react';
@@ -96,6 +97,7 @@ export class MapContainer extends Component {
                                         ? { backgroundColor: '#fafafa', cursor: 'pointer' }
                                         : { backgroundColor: '#ffffff', cursor: 'pointer' };
                                     return (
+                                        // eslint-disable-next-line react/jsx-key
                                         <div
                                             {...getSuggestionItemProps(suggestion, {
                                                 className,

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Medical.module.css';
-import GoogleMap from '../../components/GoogleMap';
+//import GoogleMap from '../../components/GoogleMap';
+import GoogleMapHospitals from '../../components/GoogleMapHospitals';
+import GoogleMapPharmacies from '../../components/GoogleMapPharmacies';
 
 function Medical() {
     // taken from: https://www.youtube.com/watch?v=UGSN6o29fPo
@@ -9,7 +11,8 @@ function Medical() {
     return (
         <div className={styles.container}>
             <div className={styles.header}>Medical</div>
-            {showHealthFacilities || showMedicalStores ? <GoogleMap /> : null}
+            {showMedicalStores ? <GoogleMapPharmacies /> : null}
+            {showHealthFacilities ? <GoogleMapHospitals /> : null}
             <div className={styles.flexContainer}>
                 {!showMedicalStores ? (
                     <button
