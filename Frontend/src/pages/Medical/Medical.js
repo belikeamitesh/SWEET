@@ -6,7 +6,7 @@ import GoogleMapPharmacies from '../../components/GoogleMapPharmacies';
 
 function Medical() {
     // taken from: https://www.youtube.com/watch?v=UGSN6o29fPo
-    const [showMedicalStores, setShowMedicalStores] = useState(false);
+    const [showMedicalStores, setShowMedicalStores] = useState(true);
     const [showHealthFacilities, setShowHealthFacilities] = useState(false);
     return (
         <div className={styles.container}>
@@ -30,7 +30,7 @@ function Medical() {
                         className={styles.button}
                         onClick={() => {
                             setShowMedicalStores(false);
-                            setShowHealthFacilities(false);
+                            setShowHealthFacilities(true);
                         }}
                     >
                         Hide Stores
@@ -51,16 +51,16 @@ function Medical() {
                     <button
                         className={styles.button}
                         onClick={() => {
-                            setShowMedicalStores(false);
+                            setShowMedicalStores(true);
                             setShowHealthFacilities(false);
                         }}
                     >
                         Hide Health Facilities
                     </button>
-                ) : null}
-                <button className={styles.button} onClick="showMedicalStores()">
+                ) : null}                
+                <a className={styles.button} href="https://belikeamitesh.github.io/Quick-Chat-App/">
                     Speak to a Professional
-                </button>
+                </a>
             </div>
         </div>
     );

@@ -105,6 +105,7 @@ export class MapContainer extends Component {
   render() {
     return (
       <div id="GoogleMap">
+        <h1 style={{'text-align': 'center'}}>Hospitals</h1>
         {/* autocomplete */}
         {/* <PlacesAutocomplete
           value={this.state.address}
