@@ -61,7 +61,10 @@ export default function AbboutUs() {
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
                             Four motivated students of computer engineering from Canada and India, united by the desire of discovering new
-                            technologies. One of our hobbies is also to try to change the world around us.
+                            technologies. One of our hobbies is also to change the world around us, which we are trying to do with this web site.
+                            Many women face uncertainty and difficulties, and we decided to contribute to the empowerment
+                            of women by providing a secure site for everyday emergencies. Our dream is to live in a world
+                            where our site will never be used...  
                         </Typography>
                     </Container>
                 </Box>
