@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        'margin-left': '5%',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
         },

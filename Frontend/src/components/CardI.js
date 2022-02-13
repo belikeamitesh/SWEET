@@ -9,7 +9,7 @@ import { Collapse } from '@material-ui/core';
 const useStyles = makeStyles({
     root: {
         maxWidth: 645,
-        background: 'rgba(0,0,0,0.5)',
+        background: '#4caf50',
         margin: '20px',
     },
     media: {

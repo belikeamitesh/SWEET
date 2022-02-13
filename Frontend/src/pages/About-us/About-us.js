@@ -89,7 +89,7 @@ export default function AbboutUs() {
                                         <Button size="small" href={card.linkedin} target="_blank">
                                             LinkedIn
                                         </Button>
-                                        <Button size="small" href="https://www.un.org/sustainabledevelopment/gender-equality/">Second link</Button>
+                                        <Button size="small" href="https://www.un.org/sustainabledevelopment/gender-equality/">Knowledge</Button>
                                     </CardActions>
                                 </Card>
                             </Grid>

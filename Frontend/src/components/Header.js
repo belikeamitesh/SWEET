@@ -14,12 +14,13 @@ const useStyles = makeStyles(() => ({
         alignItems: 'center',
         height: '100vh',
         fontFamily: 'Nunito',
+        //background: '#ffcfd6',
     },
     appbar: {
         background: 'none',
     },
     appbarWrapper: {
-        width: '80%',
+        width: '100%',
         margin: '0 auto',
     },
     appbarTitle: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles(() => ({
         fontSize: '2rem',
     },
     colorText: {
-        color: '#5AFF3D',
+        color: '#4caf50',
     },
     container: {
         textAlign: 'center',
@@ -42,6 +43,9 @@ const useStyles = makeStyles(() => ({
     goDown: {
         color: '#5AFF3D',
         fontSize: '4rem',
+    },
+    addOn: {
+        color: '#4caf50',
     },
 }));
 export default function Header() {
@@ -57,6 +61,12 @@ export default function Header() {
                 <Toolbar className={classes.appbarWrapper}>
                     <h1 className={classes.appbarTitle}>
                         <span className={classes.colorText}>SWEE</span>
+                        <p>U</p>
+                        <p className={classes.addOn}>P</p>
+                        <p>P</p>
+                        <p className={classes.addOn}>O</p>
+                        <p>R</p>
+                        <p className={classes.addOn}>T</p>
                     </h1>
                     {/* <IconButton>
             <SortIcon className={classes.icon} />
@@ -78,6 +88,7 @@ export default function Header() {
                     </Scroll>
                 </div>
             </Collapse>
+            <span>W</span>
         </div>
     );
 }
