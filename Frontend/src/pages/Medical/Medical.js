@@ -57,7 +57,8 @@ function Medical() {
                     >
                         Hide Health Facilities
                     </button>
-                ) : null}                
+                ) : null}
+                <button className={styles.button} onClick>Nearby Stores</button>                
                 <a className={styles.button} href="https://belikeamitesh.github.io/Quick-Chat-App/">
                     Speak to a Professional
                 </a>
