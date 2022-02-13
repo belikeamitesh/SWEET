@@ -3,7 +3,7 @@ import styles from './Medical.module.css';
 //import GoogleMap from '../../components/GoogleMap';
 import GoogleMapHospitals from '../../components/GoogleMapHospitals';
 import GoogleMapPharmacies from '../../components/GoogleMapPharmacies';
-
+import {Link} from 'react-router-dom';
 function Medical() {
     // taken from: https://www.youtube.com/watch?v=UGSN6o29fPo
     const [showMedicalStores, setShowMedicalStores] = useState(true);
@@ -58,7 +58,7 @@ function Medical() {
                         Hide Health Facilities
                     </button>
                 ) : null}
-                <button className={styles.button} onClick>Nearby Stores</button>                
+               <Link to="/shop"> <button className={styles.button} onClick>Nearby Stores</button>  </Link>              
                 <a className={styles.button} href="https://belikeamitesh.github.io/Quick-Chat-App/">
                     Speak to a Professional
                 </a>
