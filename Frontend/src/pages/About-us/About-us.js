@@ -21,13 +21,13 @@ const cards = [
     {
         index: 1,
         name: 'Anthony',
-        text: 'Hey, this is me.',
-        image: 'https://source.unsplash.com/random',
+        text: 'Computer engeenering student from Montréal.',
+        image: 'https://i.ibb.co/dDTm1JW/IMG-5386.jpg',
         linkedin: 'https://www.linkedin.com/in/anthony-depachtere/',
     },
-    { index: 2, name: 'Amitesh', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
-    { index: 3, name: 'Artour', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
-    { index: 4, name: 'Majid', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
+    { index: 2, name: 'Amitesh', text: 'Computer engeenering student from India.', image: 'https://i.ibb.co/F4T8NZN/1.jpg', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
+    { index: 3, name: 'Artour', text: 'Computer engeenering student from Montréal.', image: 'https://i.ibb.co/1b9Zfn0/20220107-174323-1.jpg', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
+    { index: 4, name: 'Majid', text: 'Computer engeenering student from Montréal.', image: 'https://i.ibb.co/n3w5RBp/Mozaic-Magic818-2.jpg', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
 ];
 
 const theme = createTheme();
@@ -81,7 +81,7 @@ export default function AbboutUs() {
                                         width: '100%'
                                     }}
                                 >
-                                    <CardMedia component="img" image="https://source.unsplash.com/random" alt="random" />
+                                    <CardMedia component="img" image={card.image} alt="random" />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             {card.name}

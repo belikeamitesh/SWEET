@@ -12,6 +12,7 @@ const useStyles = makeStyles(() => ({
         backgroundColor: 'black',
     },
 }));
+
 export default function App() {
     const classes = useStyles();
     return (
@@ -21,5 +22,5 @@ export default function App() {
             <PlaceToVisit />
             <PlaceToVisit2 />
         </div>
-    );
+    )
 }

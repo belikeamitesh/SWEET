@@ -4,7 +4,7 @@
         "commonjs": true,
         "jquery": true,
         "browser": true,
-        "es2021": true
+        "es2022": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
