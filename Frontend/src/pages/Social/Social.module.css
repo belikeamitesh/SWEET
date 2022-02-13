@@ -56,7 +56,7 @@
     margin-top: 5%;
 }
 
-.SMSZone{
+.SMSZone {
     background-color: #9ef7a1;
     position: absolute;
     display: inline;
@@ -67,13 +67,13 @@
     text-align: center;
 }
 
-.inputPhone{
+.inputPhone {
     text-align: center;
     font-size: 20px;
     border: 0%;
 }
 
-.inputText{
+.inputText {
     text-align: left;
     font-size: 20px;
     width: 50%;

@@ -22,5 +22,5 @@ export default function App() {
             <PlaceToVisit />
             <PlaceToVisit2 />
         </div>
-    )
+    );
 }
