@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import './CardTile.css';
+import styles from './CardTile.module.css';
 import greenPharmacy from '../green_pharmacy.jpg';
 export default function CardTiles({ pharmacy }) {
     return (
         <>
-            <div className="card-container">
-                <div className="color-card">
-                    <Link to="/store" className="pharmacy-link">
-                        <div className="pharmacy-details pharmacy-name">{pharmacy.placeName}</div>
+            <div className={styles.card_container}>
+                <div className={styles.color_card}>
+                    <Link to="/store" className={styles.pharmacy_link}>
+                        <div className={styles.pharmacy_name}>{pharmacy.placeName}</div>
                         <img src={greenPharmacy} alt="Pharmacy Logo" />
                     </Link>
                 </div>
 
-                <div className="detail-card">
-                    <span className="pharmacy-details">
-                        <span className="pharmacy-details-distance">{pharmacy.distance}</span> meters away
+                <div className={styles.detail_card}>
+                    <span className={styles.pharmacy_details}>
+                        <span className={styles.pharmacy_details_distance}>{pharmacy.distance}</span> meters away
                     </span>
-                    <span className="pharmacy-details">{pharmacy.placeAddress}</span>
+                    <span className={styles.pharmacy_details}>{pharmacy.placeAddress}</span>
                     <div
                         style={{
                             marginTop: '20px',
@@ -25,7 +25,7 @@ export default function CardTiles({ pharmacy }) {
                             justifyContent: 'center',
                         }}
                     >
-                        <Link to="/store" className="pharmacy-link">
+                        <Link to="/store" className={styles.pharmacy_link}>
                             <button
                                 style={{
                                     backgroundColor: 'orange',

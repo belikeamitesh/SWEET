@@ -1,10 +1,10 @@
 import React from 'react';
-import '../pages/MedicalStore/Store.css';
+import styles from '../pages/MedicalStore/Store.module.css';
 export default function Product(props) {
     const { product, onAdd } = props;
     return (
-        <div className="product">
-            <img className="small" src={product.image} alt={product.name} />
+        <div className={styles.product}>
+            <img className={styles.small} src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <div>${product.price}</div>
             <div>

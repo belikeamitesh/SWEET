@@ -1,4 +1,4 @@
-# SWEE, _Social and Emergency Woman Website_
+# SWEET, _Social and Emergency Woman Tech Website_
 _English will follow_
 ## Français
 ### Inspiration
