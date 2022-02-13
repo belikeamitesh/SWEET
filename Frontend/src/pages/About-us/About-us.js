@@ -25,9 +25,9 @@ const cards = [
         image: 'https://source.unsplash.com/random',
         linkedin: 'https://www.linkedin.com/in/anthony-depachtere/',
     },
-    { index: 2, name: 'Amitesh', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
-    { index: 3, name: 'Artour', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
-    { index: 4, name: 'Majid', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.google.com' },
+    { index: 2, name: 'Amitesh', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
+    { index: 3, name: 'Artour', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
+    { index: 4, name: 'Majid', text: 'Hey this is not me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
 ];
 
 const theme = createTheme();
@@ -60,8 +60,8 @@ export default function AbboutUs() {
                             Who are we?
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                            Three motivated student in computer engineering from Canada and India, united by the desire of discovering new
-                            technologies. One of our hobbys is also to try to change the wolrd around us.
+                            Four motivated students of computer engineering from Canada and India, united by the desire of discovering new
+                            technologies. One of our hobbies is also to try to change the world around us.
                         </Typography>
                     </Container>
                 </Box>
@@ -69,12 +69,13 @@ export default function AbboutUs() {
                     {/* End hero unit */}
                     <Grid container spacing={4}>
                         {cards.map((card) => (
-                            <Grid item key={card.index} xs={12} sm={6} md={4}>
+                            <Grid item key={card.index} xs={12} sm={6} md={3}>
                                 <Card
                                     sx={{
                                         height: '100%',
                                         display: 'flex',
                                         flexDirection: 'column',
+                                        width: '100%'
                                     }}
                                 >
                                     <CardMedia component="img" image="https://source.unsplash.com/random" alt="random" />
@@ -88,7 +89,7 @@ export default function AbboutUs() {
                                         <Button size="small" href={card.linkedin} target="_blank">
                                             LinkedIn
                                         </Button>
-                                        <Button size="small">Second link</Button>
+                                        <Button size="small" href="https://www.un.org/sustainabledevelopment/gender-equality/">Second link</Button>
                                     </CardActions>
                                 </Card>
                             </Grid>
