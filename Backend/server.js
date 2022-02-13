@@ -23,20 +23,12 @@ function sendSMS() {
 
 app.post("/api/sendSMS", (req, res) => {
   console.log("request for SMS");
-  let user = req.body;
-  sendSMS(user, (info) => {
-    console.log(`The SMS has been send 😃 and the id is ${info.messageId}`);
-    res.send(
-        {
-            id: "123", //id of the new post -> coming from server
-            title: '456', //title of the new post -> user has input
-            body: '789', //body of the new post -> user has input
-            userId: "Artour"//user id of the new post -> who input
-          }
-    );
-  });
+  console.log(req);
+  // console.log(`The SMS has been send 😃 and the id is ${info.messageId}`);
+  res.sendStatus(200);
 });
 
 app.get("/api", (req, res) => {
+  console.log("on est dans /api");
   res.json({ users: ["userOne", "userTwo", "userThree"] });
 });

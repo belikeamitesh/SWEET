@@ -25,9 +25,27 @@ const cards = [
         image: 'https://source.unsplash.com/random',
         linkedin: 'https://www.linkedin.com/in/anthony-depachtere/',
     },
-    { index: 2, name: 'Amitesh', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/' },
-    { index: 3, name: 'Artour', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/' },
-    { index: 4, name: 'Majid', text: 'Hey, it isn\'t me lol.', image: 'https://source.unsplash.com/random', linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/' },
+    {
+        index: 2,
+        name: 'Amitesh',
+        text: "Hey, it isn't me lol.",
+        image: 'https://source.unsplash.com/random',
+        linkedin: 'https://www.linkedin.com/in/amitesh-kumar-ak/',
+    },
+    {
+        index: 3,
+        name: 'Artour',
+        text: "Hey, it isn't me lol.",
+        image: 'https://source.unsplash.com/random',
+        linkedin: 'https://www.linkedin.com/in/artour-benevolenski-a77213205/',
+    },
+    {
+        index: 4,
+        name: 'Majid',
+        text: "Hey, it isn't me lol.",
+        image: 'https://source.unsplash.com/random',
+        linkedin: 'https://www.linkedin.com/in/majid-ibrahim-djido-a04399140/',
+    },
 ];
 
 const theme = createTheme();
@@ -61,10 +79,9 @@ export default function AbboutUs() {
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
                             Four motivated students of computer engineering from Canada and India, united by the desire of discovering new
-                            technologies. One of our hobbies is also to change the world around us, which we are trying to do with this web site.
-                            Many women face uncertainty and difficulties, and we decided to contribute to the empowerment
-                            of women by providing a secure site for everyday emergencies. Our dream is to live in a world
-                            where our site will never be used...  
+                            technologies. One of our hobbies is also to change the world around us, which we are trying to do with this web site. Many
+                            women face uncertainty and difficulties, and we decided to contribute to the empowerment of women by providing a secure
+                            site for everyday emergencies. Our dream is to live in a world where our site will never be used...
                         </Typography>
                     </Container>
                 </Box>
@@ -78,7 +95,7 @@ export default function AbboutUs() {
                                         height: '100%',
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        width: '100%'
+                                        width: '100%',
                                     }}
                                 >
                                     <CardMedia component="img" image="https://source.unsplash.com/random" alt="random" />
@@ -92,7 +109,9 @@ export default function AbboutUs() {
                                         <Button size="small" href={card.linkedin} target="_blank">
                                             LinkedIn
                                         </Button>
-                                        <Button size="small" href="https://www.un.org/sustainabledevelopment/gender-equality/">Knowledge</Button>
+                                        <Button size="small" href="https://www.un.org/sustainabledevelopment/gender-equality/">
+                                            Knowledge
+                                        </Button>
                                     </CardActions>
                                 </Card>
                             </Grid>

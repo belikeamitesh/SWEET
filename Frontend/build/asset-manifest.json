@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d160e9eb.css",
+    "main.js": "/static/js/main.bd82c6a6.js",
+    "static/media/Handmade.otf": "/static/media/Handmade.033d5168657ce9a2d679.otf",
+    "index.html": "/index.html",
+    "main.d160e9eb.css.map": "/static/css/main.d160e9eb.css.map",
+    "main.bd82c6a6.js.map": "/static/js/main.bd82c6a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d160e9eb.css",
+    "static/js/main.bd82c6a6.js"
+  ]
+}
