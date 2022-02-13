@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import styles from './Social.module.css';
-//import { ServerConnector } from '../../components/ServerConnector';
+import ServerConnector from '../../components/ServerConnector';
 
+var serveurConnector = new ServerConnector();
 var state = {
     phoneNumber: '',
     message: ''
@@ -54,7 +55,7 @@ function sendMessage(){
         let regPhone = /^\+\d{10}$/;
         if(!regPhone.test(state.phoneNumber)){
             //Connect the app to the server
-            
+            return serveurConnector.render()
         }
     }
 }
